@@ -5,7 +5,7 @@ export const InputArea = () => {
 
     const [text, setText] = useState("");
     const [todoList, setTodoList] = useState([]);
-    // const [items, setItems] = useState(false);
+
 
     useEffect(() => {
         const items = JSON.parse(localStorage.getItem('items'));
@@ -13,6 +13,8 @@ export const InputArea = () => {
             setTodoList(items);
         }
     }, []);
+
+
 
     // useEffect(() => {
     //     localStorage.setItem('items', JSON.stringify(todoList));
